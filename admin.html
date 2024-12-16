@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML admin page</title>
+    
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+</style>
+<body>
+
+    <header>
+        <h1>Cyber Cafe Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="#userManagement">User Management</a></li>
+                <li><a href="#systemControl">System Control</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- User Management Section -->
+        <section id="userManagement">
+            <h2>User Database</h2>
+            <button id="addUserBtn">Add New User</button>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User data will be added here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- System Control Section -->
+        <section id="systemControl">
+            <h2>System Control</h2>
+            <button id="shutdownBtn">Shutdown</button>
+            <button id="restartBtn">Restart</button>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports">
+            <h2>System Reports</h2>
+            <button id="generateReportBtn">Generate Report</button>
+            <div id="reportResult"></div>
+        </section>
+    </main>
+</body>
+</html>
